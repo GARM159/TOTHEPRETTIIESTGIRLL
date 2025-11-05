@@ -1,90 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="utf-8">
- <title>HAPPY BIRTHDAY</title>
- <style>
-  body {
- margin: 0;
- background-color: black;
- color: lightblue;
- text-align: center;
-  font-family: Arial, sans-serif;
-  }
- .header {
- background: linear-gradient(to right, black, blue);
-padding: 80px 20px;
-}
-
-
- .message {
-    background: linear-gradient(to bottom, blue, black);
-    padding: 60px 20px;
-   }
-
-  h1 {
-  font-size: 60px;
-  color: white;
-  margin: 0;
-  text-shadow: 0 0 15px red;
+  <meta charset="utf-8">
+  <title>HAPPY BIRTHDAY</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: lightblue;
+      text-align: center;
+      font-family: Arial, sans-serif;
     }
-
-  p {
-  font-size: 22px;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: auto;
-  color: lightblue;
- }
-
+    .header {
+      background: linear-gradient(to right, black, blue);
+      padding: 80px 20px;
+    }
+    .message {
+      background: linear-gradient(to bottom, blue, black);
+      padding: 60px 20px;
+    }
+    h1 {
+      font-size: 60px;
+      color: white;
+      margin: 0;
+      text-shadow: 0 0 15px red;
+    }
+    p {
+      font-size: 22px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+      color: lightblue;
+    }
     hr {
-   border: none;
-  height: 4px;
-   background-color: white;
-  margin: 0;
+      border: none;
+      height: 4px;
+      background-color: white;
+      margin: 0;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: lightblue;
+      color: black;
+    }
+    button:hover {
+      background-color: #00f;
+      color: white;
     }
   </style>
 </head>
 
 <body>
   <div class="header">
-  <h1>HAPPY BIRTHDAY TO MY LOVELY GIRL</h1>
+    <h1>HAPPY BIRTHDAY TO MY LOVELY GIRL</h1>
   </div>
 
   <hr>
 
   <div class="message">
-  <p>
- I just wanted to do this mini website for u to read and only u.<br>
- I wish if you could see how much I love and care about u.<br>
- I want you to be my wife and I want you by my side.<br>
-this is the weirdist gift i ever done and im really trying my best for you i hope u like it<br>
-and if u can only see how much u mean to me and how much i care about u ur the most loved person in the world<br>
-idc if it take 10 years to marry you i will wait and i will do my best just to be with u in the end <br>
-you dont know how proud i am of u the things u deal with and the things u overcome makes me wanna be next to u and comfort u <br>
-ur the sweetest and most pretty girl i ever met in my life i love u with all of my heart and i will never ever do anything bad on purpose just to hurt you<br>
-<strong>I love you</strong>
-</p>
-<button id="musicButton">press me</button>
-<audio id="bgmusic" loop>
-<source src="song.mp3" type="audio/mpeg">
-your browser does not support the audio element
-</audio>
-</div>
-<script>
-const music = document.getElementById('bgmusic');
-const button = document.getElementById('musicButton');
-button.addEventListener('click', () => {
-if (music.paused) {
-music.play();
-button.textContent = "Pause music";
-} else {
-music.pause();
-button.textContent = "Press me";
-}
-});
-</script>
+    <p>
+      I just wanted to do this mini website for you to read and only you.<br>
+      I wish if you could see how much I love and care about you.<br>
+      I want you to be my wife and I want you by my side.<br>
+      This is the weirdest gift I ever done and I'm really trying my best for you. I hope you like it.<br>
+      And if you can only see how much you mean to me and how much I care about you, you are the most loved person in the world.<br>
+      I don’t care if it takes 10 years to marry you. I will wait and do my best just to be with you in the end.<br>
+      You don’t know how proud I am of you. The things you deal with and the things you overcome make me want to be next to you and comfort you.<br>
+      You are the sweetest and most pretty girl I ever met in my life. I love you with all of my heart and I will never ever do anything bad on purpose just to hurt you.<br>
+      <strong>I love you</strong>
+    </p>
+
+    <!-- Music Button -->
+    <button id="musicButton">🎵 Play Music</button>
+    <audio id="bgmusic" loop>
+      <source src="song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <script>
+    const music = document.getElementById('bgmusic');
+    const button = document.getElementById('musicButton');
+
+    button.addEventListener('click', () => {
+      if (music.paused) {
+        music.play();
+        button.textContent = "⏸ Pause Music";
+      } else {
+        music.pause();
+        button.textContent = "🎵 Play Music";
+      }
+    });
+  </script>
 </body>
 </html>
-
 
